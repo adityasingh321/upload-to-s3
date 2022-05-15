@@ -1,0 +1,90 @@
+<!-- select client start -->
+<div class="container-fluid my-4 select-client">
+    <form action="/" method="POST" class="row row-cols-lg-auto align-items-center justify-content-center">
+        <h6 class="m-0 p-0">Select Client:</h6>
+            <select class="select initialized" name="select" id="selectClient">
+                <option value="findem">Findem Inc</option>
+                <option value="traackr">Traackr</option>
+                <option value="cliniops">CliniOps Inc</option>
+                <option value="WG-LDP">WebGhat - LDP</option>
+                <option value="proxy">Proxy-Analytics Inc</option>
+                <option value="webghat">WebGhat Web Design Services</option>
+            </select>
+        <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+    </form>
+</div>
+<!-- select client end -->
+<div class="clientReportingContent my-3">
+    <!-- client intro start -->
+    <div class="container-fluid full-responsive-width my-2">
+        <div class="row align-items-center">
+            <div class="col-4 text-center">
+                <img src="https://ldp.webghat.com/img/client/Findem.svg" class="img-fluid" style="height: 76px;" width="auto" alt="Client Logo">
+                <h5>Findem Inc</h5>
+                <p class="mb-1">Domain of work: </p>
+                <div class="d-flex justify-content-center">
+                    <p><a class="text-secondary" href="mailto:liv@findem.ai"><i class="pr-2 fas fa-envelope"></i></a></p>
+                    <p><a class="text-secondary" target="_blank" href="https://www.linkedin.com/company/findeminc/"><i class="pr-2 fab fa-linkedin"></i></a></p>
+                    <p><a class="text-secondary" target="_blank" href="https://www.findem.ai/"><i class="pr-2 fas fa-globe"></i></a></p>
+                </div>
+            </div>
+            <div class="col-8">
+                <p style="text-align: left;">Findem is a People Intelligence platform that helps companies build more
+                    engaged, diverse teams and close talent gaps faster. We're transforming how companies make their people
+                    decisions. Backed by AI and all the world’s people data, our People Intelligence platform empowers HR
+                    and talent leaders with the data-driven insights they need to architect and develop a best-of-class
+                    workforce.</p>
+                <p class="mb-1"><a class="text-secondary" href="#modal1" data-toggle="modal" data-target="#modal1"><i class="pr-2 fas fa-play-circle"></i> Findem Overview</a></p>
+                <p class="mb-1"><a class="text-secondary" href="#modal2" data-toggle="modal" data-target="#modal2"><i class="pr-2 fas fa-play-circle"></i> Findem</a></p>
+            </div>
+        </div>
+        <!-- modal video for first link -->
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body mb-0 p-0">
+                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/Voa1x6i6qeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal video for second link -->
+        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body mb-0 p-0">
+                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/EsYQp1fx8Go" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- client intro close and tab container start -->
+    <div class="container-fluid my-4">
+        <hr>
+        <div class="row justify-content-center align-items-center">
+            <ul class="nav px-3">
+                <li class="nav-item px-2"><a class="btn btn-primary" href="/" role="button">Scheduled Meetings</a></li>
+                <li class="nav-item px-2"><a class="btn btn-primary" href="/" role="button">Pending Meetings</a></li>
+                <li class="nav-item px-2"><a class="btn btn-primary" href="/" role="button">Campaigns</a></li>
+                <li class="nav-item px-2"><a class="btn btn-primary" href="/" role="button">Marketing Docs</a></li>
+                <li class="nav-item px-2"><a class="btn btn-primary" href="/" role="button"><i class="far fa-file-alt pe-2"></i>Reports</a></li>
+                <li class="nav-item px-2"><a class="btn btn-primary" href="/" role="button"><i class="fas fa-list pe-2"></i>Analytics</a></li>
+                <li class="nav-item px-2"><a class="btn btn-primary" href="/" role="button"><i class="far fa-file-pdf pe-2"></i>Checklists</a></li>
+            </ul>
+        </div>
+        <hr>
+    </div>
+    <!-- tab container end -->
+    <!-- alert message start -->
+    <div class="container">
+        <div class="row">
+            <div class="mb-1 alert-messages"></div>
+        </div>
+    </div>
+    <!-- alert message end -->
+</div>

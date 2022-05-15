@@ -1,0 +1,249 @@
+/* Hide scrollbar but keep it functional */
+/* html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+    background: transparent;
+} */
+
+/* //////////////////////////// */
+
+/* TopNav start */
+.userAvatar img {
+    height: min(34px, 5vh);
+    width: auto;
+    max-width: 80px;
+}
+.menuBtn {
+    font-size: 14px;
+    color: #fff;
+}
+/* TopNav end */
+
+/* //////////////////////////// */
+
+/* SideNav start */
+.sidenav {
+    overflow-x: hidden;
+    transition: 0.5s !important;
+}
+.sidenavFooter {
+    position:absolute;
+    bottom: 0;
+}
+/* SideNav end */
+
+/* //////////////////////////// */
+
+/* Flash for success and error messages start */
+.alert-messages .success {
+    background-color: #2FB986;
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+.alert-messages .fail {
+    background-color: #f44336;
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+.alert-messages .closebtn {
+    cursor: pointer;
+    padding-right: 8px;
+    font-size: 16px !important;
+    font-style: normal !important;
+    color: #ffffff !important;
+}
+/* Flash for success and error messages end */
+
+/* //////////////////////////// */
+
+/* LDP footer start */
+.ldpFooter {
+    background-color: #f8f8f8;
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+/* LDP footer end */
+
+/* //////////////////////////// */
+
+/* Date Picker start */
+.table-condensed th {
+    color: black; /* Making weeks th in black */
+}
+/* Date Picker end */
+
+/* //////////////////////////// */
+
+/* Dynamic radio btn style & hide start */
+.form-check-input[type=radio]:checked:after {
+    margin: 0;
+}
+.hideForm {
+    display: none;
+}
+.form-check-input[type=radio]:after {
+    z-index: 0;
+}
+/* Dynamic radio btn style & hide end */
+
+/* //////////////////////////// */
+
+/* Table styling start */
+.nowrap {
+    white-space: nowrap;
+}
+.wrapActionBtns {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+    white-space: nowrap;
+}
+.wrapActionBtns .btn{
+    padding: .5rem 1rem .4rem !important;
+}
+tr {
+    text-align: center;
+    font-size: 17px;
+}
+th {
+    font-weight: 400;
+    color: #fff;
+}
+td {
+    font-weight: 400;
+    font-size: 15px;
+}
+/* .table {
+    border-color: #aeaeae !important;
+} */
+.table-striped>tbody>tr:nth-of-type(odd) {
+    --mdb-table-accent-bg: #c1c1c142 !important;
+    color: #4c4f52;
+}
+/* Table styling end */
+
+/* //////////////////////////// */
+
+/* View more info page card styling start */
+.infoCard ul li span {
+    color: #00B74A;
+    float: right;
+}
+.infoTitle {
+    color: #00B74A;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    margin: 0;
+    padding: 8px 16px;
+}
+/* View more info page card styling end */
+
+/* //////////////////////////// */
+
+/* Select client dropdown start */
+.select-client select {
+    padding: 3px 8px;
+}
+.select-client .select.initialized {
+    display: block !important;
+    margin: 0;
+}
+.select-client .form-outline {
+    display: none !important;
+}
+/* Select client dropdown end */
+
+/* //////////////////////////// */
+
+/* Manage users page start */
+.profileIcon img {
+    height: min(34px, 5vh);
+    width: auto;
+    max-width: 80px;
+}
+/* Manage users page end */
+
+/* //////////////////////////// */
+/* //////////////////////////// */
+
+.badge {
+    color: #000000;
+}
+/*********************************** DONE ***********************************/
+
+
+
+select {
+    margin-left: 1rem;
+    font-family: inherit;
+    padding: 2px 8px;
+    font-size: inherit;
+    color: #262626d6;
+    line-height: inherit;
+}
+.form-outline .form-control {
+    border: 1px solid #bdbdbd;
+}
+
+/* Data table optimization start */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 4px 10px;
+}
+.dataTables_wrapper .dataTables_paginate {
+    padding-top: 10px;
+}
+table.dataTable {
+    border-collapse: collapse;
+}
+.dataTables_wrapper .dataTables_length {
+    padding-bottom: 10px;
+    padding-top: 6px;
+}
+div.dataTables_wrapper div.dataTables_filter {
+    padding-bottom: 10px;
+}
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc_disabled:before,
+table.dataTable thead .sorting:before {
+    right: 1em;
+    content: "↑";
+    display: none !important;
+}
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting:after {
+    right: .5em;
+    content: "↓";
+    display: none !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+.mdc-data-table__cell {
+    vertical-align: middle;
+}
+table.dataTable tbody td {
+    padding: 3px 10px;
+}
+/* Data table optimization end */

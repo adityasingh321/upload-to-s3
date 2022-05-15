@@ -1,0 +1,41 @@
+<!-- Sidenav start -->
+<div class="sidenav" id="sidenav" data-color="dark" data-mode="side" data-scroll-container="#scrollContainer" href="javascript:void(0)" onmouseleave="closeNav()">
+    <div class="text-center py-3">
+        <img src="/img/ldp_000.png" width="48%" class="img-fluid" alt="LDP logo">
+    </div>
+    <div id="scrollContainer" class="ps ps--active-y">
+        <ul class="sidenav-menu">
+            <li class="sidenav-item">
+                <a href="/" class="sidenav-link"><i class="fas fa-tag pr-3"></i>Dashboard</a>
+                <a href="/addContactList" class="sidenav-link"><i class="fas fa-tag pr-3"></i>Add Contact List</a>
+                <a href="/listContactFiles" class="sidenav-link"><i class="fas fa-tag pr-3"></i>List Contact Collection</a>
+                <a href="/listContactRecords" class="sidenav-link"><i class="fas fa-tag pr-3"></i>List Contact Records</a>
+            </li>
+        </ul>
+    </div>
+    <div class="sidenavFooter my-4">
+        <hr>
+        <div class="text-center pt-2">
+            <a href="https://www.webghat.com/" target="_blank">
+                <img class="img-fluid" width="40%" src="/img/webghat_000.png" alt="WebGhat Inc">
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Sidenav end -->
+
+<script>
+    document.getElementById("sidenav").style.width = "0";
+
+    function openNav() {
+        document.getElementById('sidenav').setAttribute("data-hidden", false)
+        document.getElementById("sidenav").style.width = "220px";
+        // console.log("test open")
+    }
+
+    function closeNav() {
+        document.getElementById('sidenav').setAttribute("data-hidden", true)
+        document.getElementById("sidenav").style.width = "0";
+        // console.log("test close")
+    }
+</script>
